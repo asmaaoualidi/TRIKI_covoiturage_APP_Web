@@ -1,6 +1,6 @@
 # 🚗 TrikiCov — Plateforme de Covoiturage
 
-**TrikiCov** est une application web de covoiturage permettant à des conducteurs de publier des trajets et à des passagers de les rechercher, les réserver et les payer en ligne. Le projet a été réalisé dans le cadre d'un PFA (Projet de Fin d'Année) par **Dagdag & Oualidi**.
+**TrikiCov** est une application web de covoiturage permettant à des conducteurs de publier des trajets et à des passagers de les rechercher, les réserver et les payer en ligne. Le projet a été réalisé dans le cadre d'un PFA (Projet de Fin d'Année) par **Asmaa Oualidi**.
 
 ---
 
@@ -230,4 +230,4 @@ Le paiement par carte utilise **Stripe** :
 
 ## 👥 Auteurs
 
-Projet réalisé par **Dagdag** & **Oualidi** — PFA 2025/2026.
+Projet réalisé par **Asmaa Oualidi** — PFA 2025/2026.
