@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+
+:root {
+	--triki: #d32f2f;
+	--triki-600: #b71c1c;
+	--bg: #f5f5f7;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	html, body, #root {
+		height: 100%;
+	}
+	body {
+		@apply bg-gray-50 text-gray-800;
+		font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+		background-color: var(--bg);
+	}
+	a { color: var(--triki); }
+	.btn-primary {
+		background-color: var(--triki);
+		color: white;
+	}
+}
+
+/* Custom background utility */
+.bg-app {
+	background-color: var(--bg); /* #f5f5f7 */
+}
+
+/* Safeguard: prevent white text on white background (quick fix) */
+.bg-white .text-white {
+	color: #111827 !important; /* gray-900 */
+}
+.bg-white.text-white,
+.bg-white.text-white * {
+	color: #111827 !important;
+}
+
+/* Also protect elements that may receive white text on the custom background */
+.bg-app .text-white,
+.bg-app.text-white,
+.bg-app.text-white * {
+	color: #111827 !important;
+}
+
+/* Ensure table cells remain readable (prevent white-on-white in tables) */
+table th, table td, .table th, .table td {
+	color: #111827 !important;
+}
+
+/* Admin tabs specific safeguard: force readable black text on white pills */
+.admin-tabs button {
+  color: #111827 !important;
+  opacity: 1 !important;
+}
+.admin-tabs button.bg-triki {
+  color: white !important;
+}
+.admin-tabs button:not(.bg-triki):hover,
+.admin-tabs button:not(.bg-triki):focus,
+.admin-tabs button:not(.bg-triki):active {
+  color: #1f2937 !important;
+}
